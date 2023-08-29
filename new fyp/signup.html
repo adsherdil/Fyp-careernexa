@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Hire Me</h2>
+                    <p>Have an Account.<br>Login</p> <a href="./login.html" class="btn">Login</a>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Sign Up</h2>
+                    <form onsubmit=" signUp(); return false">
+                        <p> <label>First Name<span>*</span></label> <input type="text" placeholder="Name" id="fname" required> </p>
+                        <p> <label>Last Name<span>*</span></label> <input type="text" placeholder="Name" id="lname" required> </p>
+                        <p> <label>Username/Email address<span>*</span></label> <input type="text" placeholder="Username or Email" id="email" required> </p>
+                        <p> <label>Password<span>*</span></label> <input type="password" placeholder="Password" id="password" required> </p>
+                        <p> <label>Confirm Password<span>*</span></label> <input type="password" placeholder="Repeat Password" id="cpassword" required> </p>
+                        <p> <input type="file" id="file" placeholder="chose your file"> </p>
+                        <!-- <p> <select class="form-select" id ="userInt"aria-label="Default select example">
+                            <option selected>Which field interest</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="web dev">web dev</option>
+                            <option value="flutter">flutter</option>
+                            <option value="cyber security">cyber security</option>
+
+                          </select> </p> -->
+                        <p> <input type="" value="Sign Up" onclick="createUer()"> </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="signup.js"></script>
+</html>

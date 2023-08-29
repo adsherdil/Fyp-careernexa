@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+/* <-----------------------login and signup page-----------> */
+body {
+    margin: 0;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    /* background: #eaeff4; */
+    height: 100%;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 0 5px #999999;
+}
+
+.login .col-left,
+.login .col-right {
+    padding: 30px;
+    display: flex;
+}
+
+.login .col-left {
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    /* background: #2aa15f; */
+    background: blue;
+}
+
+.login .col-right {
+    padding: 60px 30px;
+    width: 50%;
+    margin-left: -10%;
+}
+
+@media(max-width: 575px) {
+    .login .container {
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .login .col-left,
+    .login .col-right {
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+    }
+    .login .col-right {
+        padding: 30px;
+    }
+}
+
+.login .login-text {
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+}
+
+.login .login-text h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login .login-text p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.login .login-text .btn {
+    display: inline-block;
+    font-family: poppins;
+    padding: 7px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: .3s;
+}
+
+.login .login-text .btn:hover {
+    color: blue;
+    box-shadow: inset 150px 0 0 0 #ffffff;
+}
+
+.login .login-form {
+    position: relative;
+    width: 100%;
+}
+
+.login .login-form h2 {
+    margin: 0 0 15px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.login .login-form p {
+    margin: 0 0 10px 0;
+    text-align: left;
+    color: #666666;
+    font-size: 15px;
+}
+
+.login .login-form p:last-child {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.login .login-form p a {
+    color: blue;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login .login-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    letter-spacing: .5px;
+}
+
+.login .login-form p:last-child label {
+    width: 60%;
+    float: left;
+}
+
+.login .login-form label span {
+    color: #ff574e;
+    padding-left: 2px;
+}
+
+.login .login-form input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+}
+
+.login .login-form input:focus {
+    border-color: #ff574e;
+}
+
+.login .login-form button,
+.login .login-form input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    color: blue;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 blue;
+    transition: .3s;
+}
+
+.login .login-form button:hover,
+.login .login-form input[type=submit]:hover {
+    color: #ffffff;
+    box-shadow: inset 250px 0 0 0 blue;
+}
+/* #signBtn {
+    background-color: blue;
+    color: white;
+
+} */
+
+
+/* <-------------------navbar------------------------> */
+.btn1{
+    background-color: blue;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    color: white;
+}
+
+
+/* <------------------ drpdown for acc---------------------> */
+
+.logo{
+    width: 200px;
+}
+.cart-img{
+    width: 140px;
+    height: 60px;
+}
+.cart-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.nameandimg img{
+    border-radius: 50%;
+}
+#myimgid{
+    height: 90px;
+    border-radius: 10px soilid black;
+    border-radius: 50%;
+}
+#myimgid img{
+    border-radius: 50%;
+}
+.nameandimg p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.nameandimg{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px 0;
+}
+.dropdown{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 10px grey;
+    padding: 10px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+.dropdown ul li{
+    display: flex;
+    /* padding: 5btpx; */
+    /* margin-top: 5px; */
+    cursor: pointer;
+}
+
+.dropdown ul li:hover{
+    background-color: #c7dcff ;
+}
+
+
+.dropdown ul li i{
+    color: black;
+    font-size: 1.5vw;
+}
+
+.dropdown ul li p{
+    margin-left: 10px;
+    font-size: 1.3vw;
+}
+.blackdiv{
+    display: block;
+}
+.search{
+    margin-left: 50px;
+}
+/* <------------------ad---------> */
+.ad_img{
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    margin-top: 140px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.ad_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+
+}
+.visible{
+    display: block;
+}
+.acc-btn{
+    height: 40px;
+    width: 140px;
+    background-color: blue;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+
+/* <----------------end---------------------------------> */
+
+.mya{
+    color: blue !important;
+}
+
+
+/* <------------footer  start --------------> */
+/* .footer{
+    background-color: blue;
+    height: 260px;
+
+} */
+
+.main-body{
+    height: 250px;
+}
+
+/* <----------------my post -----------> */
+.inp{
+    width: 100%;
+    margin-left: 0%;
+}
+
+.blogForm{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.hidden{
+    display: none;
+}
+
+.btns a{
+    margin-left: 10px;
+}
+.show{
+    display: block;
+}
+.color{
+    color: black;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.my-border{
+    border: 1px solid black;
+}
+
+.btn2{
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.divImg{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.divImg img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.divImg{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.divImg img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.margin{
+    margin-left: 30px;
+}
+.postPic{
+    height: 400px;
+    width: 100%;
+    margin-left: 10px;
+}
+.postPic img{
+    height: 100%;
+    width: 90%;
+}
+
+.main-page{
+    
+    width: 100%;
+    margin-top: 10px;
+}
+.showCard{
+    width: 100%;
+    
+    /* border: 2px solid black; */
+}
+.myclr{
+    background-color: blue;
+}
+
+.footer{
+    background-color: blue;
+    height: 300px;
+    margin-top: 20px;
+}
+.myLi{
+    margin-top: 50px;
+    border: none;
+}
+
+select{
+    width: 100%;
+    height: 30px;
+    border-radius: 25px;
+}
+
+.showCard{
+    width: 60%;
+}
+
+/* <-----------------Loader----------------> */
+#preloader{
+    height: 100vh;
+    width: 100%;
+    background: #000 url('./images/ZKZg.gif' ) no-repeat center ;
+    position: fixed;
+    z-index: 100;
+}
